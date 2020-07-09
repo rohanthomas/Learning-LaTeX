@@ -1,0 +1,266 @@
+\documentclass[10pt]{article}
+
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage[section]{placeins}
+\usepackage{xcolor}
+\usepackage{breakcites}
+\usepackage{lineno}
+\usepackage{hyphenat}
+
+
+
+
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\@combinedblfloats{\box\@outputbox}{\unvbox\@outputbox}{}{%
+  \errmessage{\noexpand\@combinedblfloats could not be patched}%
+}%
+\makeatother
+
+
+\usepackage{natbib}
+
+
+
+
+\renewenvironment{abstract}
+  {{\bfseries\noindent{\abstractname}\par\nobreak}\footnotesize}
+  {\bigskip}
+
+\titlespacing{\section}{0pt}{*3}{*1}
+\titlespacing{\subsection}{0pt}{*2}{*0.5}
+\titlespacing{\subsubsection}{0pt}{*1.5}{0pt}
+
+
+\usepackage{authblk}
+
+
+\usepackage{graphicx}
+\usepackage[space]{grffile}
+\usepackage{latexsym}
+\usepackage{textcomp}
+\usepackage{longtable}
+\usepackage{tabulary}
+\usepackage{booktabs,array,multirow}
+\usepackage{amsfonts,amsmath,amssymb}
+\providecommand\citet{\cite}
+\providecommand\citep{\cite}
+\providecommand\citealt{\cite}
+% You can conditionalize code for latexml or normal latex using this.
+\newif\iflatexml\latexmlfalse
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}%
+
+\AtBeginDocument{\DeclareGraphicsExtensions{.pdf,.PDF,.eps,.EPS,.png,.PNG,.tif,.TIF,.jpg,.JPG,.jpeg,.JPEG}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+
+
+
+\usepackage{float}
+
+
+
+
+
+
+
+
+\begin{document}
+
+\title{NCERT Integrals Solution}
+
+
+
+\author[1]{Rohan Thomas}%
+\affil[1]{Kirchhoff-Institut für Physik}%
+
+
+\vspace{-1em}
+
+
+
+  \date{\today}
+
+
+\begingroup
+\let\center\flushleft
+\let\endcenter\endflushleft
+\maketitle
+\endgroup
+
+
+
+
+
+
+
+
+\sloppy
+
+
+\subsection*{Exercise 7.2}
+
+{\label{584413}}
+
+\Huge 1) $\int \frac{2x}{1+x^{2}} \,dx $ 
+\newline
+\newline
+\LARGE $u= 1+x^ {2}, du= 2x \,dx$ 
+\newline
+\newline
+\LARGE $= \int \frac{1}{u} \,du$
+\newline
+\newline
+\LARGE $= \ln |u| + C$
+
+\newline
+\Huge 2) $\int \frac{(\ln(x))^{2}}{x} \,dx$ 
+\newline
+\newline
+\LARGE $u= \ln {x}, du= \frac{1}{x} \,dx$ 
+\newline
+\newline
+\LARGE $= \int u^{2} \,du$
+\newline
+\newline
+\LARGE $= \frac{u^{3}}{3} +C $
+
+\newline
+\Huge 3) $\int \frac{1}{x+x\ln x} \,dx$ 
+\newline
+\newline
+\LARGE $= \int \frac{1}{x(1+\ln x)} \,dx$
+\newline
+\newline
+\LARGE $u= 1 +\ln x, du=\frac{1}{x} \,dx$
+\newline
+\newline
+\LARGE $= \int \frac{1}{u}\,du$
+\newline
+\newline
+\LARGE $= \ln|u| \,du$
+\newline
+\newline
+\LARGE $= \ln|1+x^{2}|+ C$
+
+\newline
+\Huge 4) $\int \sin x \sin(\cos x) \, dx$ 
+\newline
+\newline
+\LARGE $u= \cos x, du=-\sin x \,dx$
+\newline
+\newline
+\LARGE $= -\int \sin(u) \,du $
+\newline
+\newline
+\LARGE $= -cos(u) $
+\LARGE $= -cos(cosx) + C$
+
+\newline
+\Huge 5) $\int \sin (ax+b) \cos(ax+b) \, dx$ 
+\newline
+\newline
+\LARGE $u= \sin (ax+b), du=a \cos (ax+b)  \,dx$
+\newline
+\newline
+\LARGE $= \frac{1}{a}\int u \,du $
+\newline
+\newline
+\LARGE $= \frac{u^{2}}{2a}$
+\newline
+\newline
+\LARGE $= \frac{\sin(ax+b)^{2}}{2a} + C$
+
+\newline
+\Huge 6) $\int \sqrt{ax+b} \,dx$ 
+\newline
+\newline
+\LARGE $u= ax+b, du=a \,dx$
+\newline
+\newline
+\Huge $=\frac{1}{a}\int \sqrt{u} \,du$ 
+\newline
+\newline
+\LARGE $=\frac{1}{a} \frac {u^\frac{3}{2}} {\frac{3}{2}}$ 
+\newline
+\newline
+\LARGE $= \frac {2(ax+b)^\frac{3}{2}}{3a} + C$  
+
+\newline
+\Huge 7) $\int x \sqrt{x+2} \,dx$ 
+\newline
+\newline
+\LARGE $u= x+2, x=u-2, \,dx=dx$
+\newline
+\newline
+\Huge $=\int (u-2) \sqrt{u} \,du$ 
+\newline
+\newline
+\LARGE $=\int (u-2) (u)^{\frac{1}{2}} \,du$ 
+\newline
+\newline
+\LARGE $=\int (u)^{\frac{3}{2}}- 2(u)^{\frac{1}{2}} \,du$ 
+\newline
+\newline
+\LARGE $=\int (u)^{\frac{3}{2}} du - 2\int (u)^{\frac{1}{2}} \,du$ 
+\newline
+\newline
+\LARGE $=\frac{(u)^{\frac{5}{2}}}{\frac{5}{2}}- 2(\frac{(u)^{\frac{3}{2}}}{\frac{3}{2}})$ 
+\newline
+\newline 
+\LARGE $= \frac {2(u)^\frac{5}{2}}{5} -2(\frac {2(u)^\frac{3}{2}}{3})$ 
+\newline
+\newline
+\LARGE $= \frac {2(x+2)^\frac{3}{2}}{5} - \frac {4(x+2)^\frac{3}{2}}{3}+ C$  
+
+\newline
+\Huge 8) $\int x \sqrt{1+2x^{2}} \,dx$ 
+\newline
+\newline
+\LARGE $u= 1+2x^{2}, du= 4x \, dx$
+\newline
+\newline
+\Huge $=\frac{1}{4}\int \sqrt{u} \,du$ 
+\newline
+\newline
+\LARGE $= \frac {(u)^\frac{3}{2}}{6}$  
+\newline
+\newline
+\LARGE $= \frac {(1+2x^{2})^\frac{3}{2}}{6} + C$  
+
+\newline
+\Huge 9) $\int (4x+2) \sqrt{x^{2}+x+1} \,dx$ 
+\newline
+\newline
+\Huge $= \int 2(2x+1) \sqrt{x^{2}+x+1} \,dx$ 
+\newline
+\newline
+\LARGE $u= x^{2}+x+1, du= 2x+1 \, dx$
+\newline
+\newline
+\LARGE $= 2 \int \sqrt{u} \,du$ 
+\newline
+\newline
+\LARGE $= 2 \left(\frac{u^\frac{3}{2}}{\frac{3}{2}}\right) \,du$
+\newline
+\newline
+\LARGE $ = \frac{2 u^\frac{3}{2}}{3} + C$
+\newline
+\newline
+\LARGE $ = \frac{2(x^{2}+x+1)^\frac{3}{2}}{3} + C$
+
+\selectlanguage{english}
+\FloatBarrier
+\end{document}
+
