@@ -1,2 +1,2 @@
-# LaTex
-Repository contaning maths exercises solved using LaTex
+# LaTex Projects
+Repository contaning math exercises solved using LaTeX
