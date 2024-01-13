@@ -1,2 +1,2 @@
 # LaTex Projects
-Repository contaning some on-going math documents typsetted in LaTeX
+Repository contaning some math documents typsetted in LaTeX
